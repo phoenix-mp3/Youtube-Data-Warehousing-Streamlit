@@ -6,7 +6,7 @@ import streamlit as st
 
 #API key connection
 def api_connect():
-    api_id="AIzaSyBlPsV_LVeN5KuebN12oE7KqE6pQPIifzM"
+    api_id="AIzaSyAkbGbCBkb1rpwpP6WblO_kvJ8QkyohoaI"
     api_service_name="youtube"
     api_version="v3"
     yt=build(api_service_name,api_version,developerKey=api_id)
@@ -432,8 +432,8 @@ st.set_page_config(
     layout="wide",  # You can customize the layout as per your requirement
 )
 
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 with st.sidebar:
     st.title("Youtube Data Harvesting and Warehousing")
